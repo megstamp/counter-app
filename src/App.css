@@ -1,38 +1,66 @@
-.App {
+:root {
+  --color-white: rgba(255, 255, 255, 0.8);
+  --color-gold: rgb(216, 175, 39, 0.8);
+  --color-grey-dark: rgba(0, 0, 0, 0.8);
+  --opacity: 0.88;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+* { font-family: 'Tajawal', sans-serif; }
+
+body {
+  background-image: url("../public/images/abacus1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+  background-color: var(--color-white);
+  opacity: var(--opacity);
+  color: var(--color-grey-dark);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1 {
+  font-size: calc(15.5em + 10vw);
+  font-weight: 200;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 2px 4px var(--color-grey-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:link,
+a:visited {
+  font-size: 1.2rem;
+  color: var(--color-grey-dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  font-size: 22px;
+  font-weight: 200;
+  color: rgba(2, 0, 0, 0.8);
+  background-color: var(--color-white);
+  opacity: var(--opacity);
+  border: 1px solid var(--color-gold);
+  margin: 6px;
+  padding: 15px;
+  border-radius: 13px;
+  box-shadow: 0px 2px 4px var(--color-grey-dark);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-container {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
 }
